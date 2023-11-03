@@ -8,3 +8,10 @@ function updateClick() {
 buttons.forEach(function (button){
     button.addEventListener('click',updateClick)
 })
+
+const bs = document.querySelectorAll(".btn-primary");
+bs.forEach(function (bs){
+    document.addEventListener('DOMContentLoaded', function () {
+        let popover = new bootstrap.Popover(bs);
+    });
+})
