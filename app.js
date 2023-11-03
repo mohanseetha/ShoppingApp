@@ -1,7 +1,10 @@
+const buttons = document.querySelectorAll('.btn-success');
+const c = document.getElementById("count");
 let count = 0;
-let button = document.getElementById("myButton");
-let countDisplay = document.getElementById("count");
-button.onclick = function()  {
+function updateClick() {
     count++;
-    countDisplay.innerHTML = count;
-};
+    c.innerHTML = count;
+}
+buttons.forEach(function (button){
+    button.addEventListener('click',updateClick)
+})
