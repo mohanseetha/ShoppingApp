@@ -18,8 +18,8 @@
                 <button class="btn btn-outline-primary" type="submit">Search</button>
             </form>
             <div class="nav-item">
-                <a class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a class="nav-link">Cart</a>
+                <a class="nav-link" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="nav-link" href="cart.html">Cart <span id="count"></span></a>
             </div>
         </div>
     </nav>
@@ -30,7 +30,7 @@
             <div class="card-body">
                 <h2 class="card-title">iPhone 15</h2>
                 <a href="#" class="btn btn-primary">Go to Details</a>
-                <a href="#" class="btn btn-success">Add to cart</a>
+                <a href="#" class="btn btn-success" id="myButton">Add to cart</a>
             </div>
         </div>
         <div class="card">
@@ -95,5 +95,6 @@
     <br>
     <center><button type="button" class="btn btn-primary">More</button></center>
     <br>
+    <script src="app.js"></script>
 </body>
 </html>
