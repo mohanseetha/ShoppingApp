@@ -5,7 +5,7 @@ function updateClick() {
     count++;
     c.innerHTML = count;
     c.style.backgroundColor = "red";
-    c.style.borderRadius = "15px";
+    c.style.borderRadius = "10px";
     c.style.color = "white";
     c.style.border = "medium solid red";
 }
